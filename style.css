@@ -1,0 +1,165 @@
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verydarkbluemainbg :hsl(233, 47%, 7%);
+    --darkdesaturatedbluecardbg : hsl(244, 38%, 16%);
+    --softvioletaccent :hsl(277, 64%, 61%);
+    --whitemainheadingstats :hsl(0, 0%, 100%);
+    --slightlytransparentwhitep :hsla(0, 0%, 100%, 0.75);
+    --slightlytransparentwhitestat : hsla(0, 0%, 100%, 0.6);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.google.com/specimen/Inter);
+    font-family: Lexend Deca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}   
+img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    mix-blend-mode: multiply ;
+    border-top-left-radius: 0.5rem ;
+    border-top-right-radius: 0.5rem;
+}
+
+
+body {
+    font-family: "Lexend Deca";
+    background-color:var(--verydarkbluemainbg) ;
+    color: var(--whitemainheadingstats);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+    
+}
+
+.page {
+    background-color: var(--darkdesaturatedbluecardbg) ;
+    display: flex;
+    flex-direction: column;
+
+    border-radius:.5rem;
+}
+
+main {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+p {
+    color: var(--slightlytransparentwhitep);
+}
+
+header {
+    background-color: var(--softvioletaccent);
+}
+
+h1,h2 {
+    font-family: "Inter";
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+h1 span {
+    color: var(--softvioletaccent);
+}
+.main-text-p {
+    font-size: .91rem;
+    line-height: 1.8;
+    color: var(--slightlytransparentwhitep);
+    padding-top: 0.9rem;
+    padding-bottom: .9rem;
+}
+
+.datas-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.datas {
+    padding-top: 1.4rem;
+}
+h2 {
+    font-weight: 600;
+    font-size: 1.35rem;
+    padding-bottom: 0.4rem;
+}
+
+
+
+.datas p{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: .08rem;
+    color: var(--slightlytransparentwhitestat);
+}
+
+@media screen and (min-width : 650px){
+    body {
+        text-align: left;
+    }
+    .page {
+        flex-direction: row-reverse;
+
+
+    }
+
+    header {
+        min-width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+
+    }
+
+    main {
+        min-width: 50%;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .main-text-p {
+        font-size: 0.75rem;
+    }
+
+    .datas-container {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .datas {
+        padding-right: 2rem;;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .datas p {
+        font-size: 0.6rem;
+    }
+
+    header img {
+
+    }
+
+}
