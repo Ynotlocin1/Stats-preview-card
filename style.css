@@ -20,11 +20,13 @@
 }   
 img {
     display: block;
+
     width: 100%;
-    overflow: hidden;
+
     mix-blend-mode: multiply ;
     border-top-left-radius: 0.5rem ;
     border-top-right-radius: 0.5rem;
+
 }
 
 
@@ -40,14 +42,16 @@ body {
     text-align: center;
     
     
+    
 }
 
 .page {
     background-color: var(--darkdesaturatedbluecardbg) ;
     display: flex;
     flex-direction: column;
-
+    margin: auto 1.5rem;
     border-radius:.5rem;
+    
 }
 
 main {
@@ -60,6 +64,9 @@ p {
 
 header {
     background-color: var(--softvioletaccent);
+    border-top-left-radius: 0.5rem ;
+    border-top-right-radius: 0.5rem;
+
 }
 
 h1,h2 {
@@ -112,6 +119,7 @@ h2 {
     }
     .page {
         flex-direction: row-reverse;
+        margin: auto 8rem;
 
 
     }
